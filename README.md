@@ -70,11 +70,11 @@ See [`documentation/architecture.md`](documentation/architecture.md) for the ful
 | Link2 | 10.0.0.4/30 |
 | Link3 | 10.0.0.8/30 |
 
-Full addressing plan with usable ranges and broadcast addresses: [`documentation/ip-addressing.md`](documentation/ip-addressing.md) *(pending)*
+Full addressing plan with usable ranges and broadcast addresses: [`documentation/ip-addressing.md`](documentation/ip-addressing.md)
 
 ## 🧩 08. Subnetting
 
-VLSM breakdown and design reasoning: [`documentation/subnetting.md`](documentation/subnetting.md) *(pending)*
+VLSM breakdown and design reasoning: [`documentation/subnetting.md`](documentation/subnetting.md)
 
 ## 🖥️ 09. Device Inventory
 
@@ -97,23 +97,23 @@ VLSM breakdown and design reasoning: [`documentation/subnetting.md`](documentati
 
 ## ⚙️ 11. Router Configuration
 
-*(In progress — configs will be published under [`configs/`](configs/) as each router is completed)*
+Full running-configs for all 4 routers are published under [`configs/`](configs/): [`HQ-R`](configs/HQ-R-config.txt), [`Core-R`](configs/Core-R-config.txt), [`Branch01-R`](configs/Branch01-R-config.txt), [`Branch02-R`](configs/Branch02-R-config.txt).
 
 ## 🧭 12. Routing Design
 
-Static routing only. Details and per-router route tables: [`documentation/routing.md`](documentation/routing.md) *(pending)*
+Static routing only. Details and per-router route tables: [`documentation/routing.md`](documentation/routing.md)
 
 ## 🧪 13. Testing & Validation
 
-*(Pending — will follow the test plan in `documentation/testing.md` once implementation is complete)*
+Full test plan and results (local, same-site, WAN, remote LAN, end-to-end, reverse path, path analysis) — all passing with 0% packet loss: [`documentation/testing.md`](documentation/testing.md)
 
 ## 🩺 14. Troubleshooting
 
-*(Pending — deliberate failure-injection scenarios documented in `documentation/troubleshooting.md`)*
+One deliberate failure-injection scenario completed (missing static route) — full symptom/investigation/root-cause/fix writeup: [`documentation/troubleshooting.md`](documentation/troubleshooting.md). Additional scenarios planned.
 
 ## 🔒 15. Security Baseline
 
-Basic Cisco IOS security baseline applied consistently across all routers (hostnames, `enable secret`, console/VTY authentication, `service password-encryption`). Details: [`documentation/security.md`](documentation/security.md) *(pending)*
+Basic Cisco IOS security baseline applied consistently across all routers (hostnames, `enable secret`, console/VTY authentication, `service password-encryption`). Details: [`documentation/security.md`](documentation/security.md)
 
 ## 💡 16. Lessons Learned
 

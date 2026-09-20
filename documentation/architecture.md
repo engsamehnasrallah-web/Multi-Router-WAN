@@ -36,7 +36,7 @@ The sites are **not** all directly connected to HQ. Instead, the network uses a 
 | Router | LAN Interfaces | Serial (WAN) Interfaces | Total |
 |---|---|---|---|
 | HQ-R | 2 (Staff LAN, Server Farm) | 1 (↔ Core-R) | 3 |
-| Core-R | 0 | 3 (↔ HQ-R, ↔ Branch01-R, ↔ Branch02-R via Branch01-R) | 3 |
+| Core-R | 0 | 2 (↔ HQ-R, ↔ Branch01-R) | 2 |
 | Branch01-R | 1 (Branch01 LAN) | 2 (↔ Core-R, ↔ Branch02-R) | 3 |
 | Branch02-R | 1 (Branch02 LAN) | 1 (↔ Branch01-R) | 2 |
 

@@ -1,0 +1,63 @@
+Building configuration...
+
+Current configuration : 1059 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname Core-R
+!
+enable secret 5 $1$mERr$ePNQT86SBUUoOLRCadxJR.
+!
+no ip cef
+no ipv6 cef
+!
+license udi pid CISCO2811/K9 sn FTX1017PQVU-
+!
+spanning-tree mode pvst
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0/0
+ ip address 10.0.0.2 255.255.255.252
+ clock rate 64000
+!
+interface Serial0/0/1
+ ip address 10.0.0.5 255.255.255.252
+ clock rate 64000
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 172.16.0.0 255.255.255.248 10.0.0.1
+ip route 172.16.0.16 255.255.255.248 10.0.0.6
+ip route 172.16.0.8 255.255.255.248 10.0.0.6
+ip route 172.16.1.0 255.255.255.252 10.0.0.1
+!
+ip flow-export version 9
+!
+line con 0
+ password 7 08324D430C1156
+ login
+!
+line aux 0
+!
+line vty 0 4
+ password 7 08324D430C1151
+ login
+!
+end
