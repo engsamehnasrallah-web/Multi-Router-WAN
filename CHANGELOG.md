@@ -4,20 +4,24 @@ All notable changes to this project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## [Unreleased] — targeting v1.0.0 (First Stable Release)
 
-### Added
-- Additional troubleshooting scenarios (interface shutdown, wrong IP, wrong mask, wrong next-hop)
-- Network topology diagram
-- Implementation screenshots
-- Lessons learned and future improvements sections
+### Planned
+- Troubleshooting Scenario 2: interface shutdown
+- Troubleshooting Scenario 3: wrong IP address
+- Troubleshooting Scenario 4: wrong subnet mask
+- Troubleshooting Scenario 5: wrong next-hop / broken WAN link
+- Final engineering self-review (scored per category)
 
-## [0.3.0] - Troubleshooting & Documentation
+## [0.9.0] - 2026-09-20 (Pre-release — one step from v1.0.0)
 
 ### Added
 - Troubleshooting Scenario 1: missing static route on Core-R (symptom, investigation, root cause, fix, verification)
-- Full documentation set: `ip-addressing.md`, `subnetting.md`, `wan-design.md`, `routing.md`, `testing.md`, `troubleshooting.md`, `security.md`
+- Full documentation set: `ip-addressing.md`, `subnetting.md`, `wan-design.md`, `routing.md`, `testing.md`, `troubleshooting.md`, `security.md`, `lessons-learned.md`
 - Final router configs published under `configs/`
+- Network topology diagram (`diagrams/network-topology.svg`)
+- Implementation screenshots (topology, per-router routing tables, end-to-end ping/tracert)
+- `LICENSE` (MIT) and `SECURITY.md`
 
 ### Fixed
 - Corrected Core-R's interface count in `architecture.md` (2 serial interfaces, not 3 — Core-R does not connect directly to Branch02-R)
