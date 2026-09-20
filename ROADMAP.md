@@ -44,8 +44,8 @@
 - [x] `testing.md`
 - [x] `troubleshooting.md` (scenario 1)
 - [x] `security.md`
-- [ ] `lessons-learned.md`
-- [ ] Network topology diagram
+- [x] `lessons-learned.md`
+- [x] Network topology diagram
 - [ ] Screenshots
 
 ## Phase 8 — GitHub Publication

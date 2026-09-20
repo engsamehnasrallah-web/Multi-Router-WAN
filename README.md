@@ -48,7 +48,9 @@ See [`documentation/architecture.md`](documentation/architecture.md) for the ful
 
 ## 🗺️ 05. Topology
 
-*(Diagram to be added — see [`diagrams/`](diagrams/))*
+![Network Topology](diagrams/network-topology.svg)
+
+Full diagram with subnets, LANs, and DCE/DTE markers: [`diagrams/network-topology.svg`](diagrams/network-topology.svg)
 
 ## 🔗 06. WAN Design
 
@@ -117,15 +119,35 @@ Basic Cisco IOS security baseline applied consistently across all routers (hostn
 
 ## 💡 16. Lessons Learned
 
-*(To be completed at the end of the project)*
+See [`documentation/lessons-learned.md`](documentation/lessons-learned.md) for reflections on VLSM design, DCE/DTE cabling behavior in Packet Tracer, routing table completeness, and root-cause troubleshooting reasoning.
 
 ## 🚀 17. Future Improvements
 
-*(To be completed at the end of the project)*
+- Complete the remaining troubleshooting scenarios (interface shutdown, wrong IP, wrong subnet mask, wrong next-hop)
+- Introduce dynamic routing (OSPF) in a later portfolio project as a direct successor to this static design
+- Add SSH access and basic ACLs as part of a dedicated security-focused project
 
 ## 📸 18. Screenshots
 
-*(To be added during implementation and testing)*
+![Network Topology](screenshots/Network_Topology.png)
+*Full physical topology in Packet Tracer*
+
+![HQ-R Routing Table](screenshots/HQ-R-IP-Route.png)
+*`show ip route` on HQ-R*
+
+![Core-R Routing Table](screenshots/Core-R-IP-Route.png)
+*`show ip route` on Core-R*
+
+![Branch01-R Routing Table](screenshots/Branch01-R-IP-Route.png)
+*`show ip route` on Branch01-R*
+
+![Branch02-R Routing Table](screenshots/Branch02-R-IP-Route.png)
+*`show ip route` on Branch02-R*
+
+![End-to-End Ping and Traceroute](screenshots/Ping-e2e-trcrt.png)
+*End-to-end ping (PC0 → PC5) and `tracert` output*
+
+*(Troubleshooting Scenario 1 screenshots to be added separately.)*
 
 ## 📦 19. How to Open the Project
 
