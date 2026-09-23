@@ -46,12 +46,12 @@
 - [x] `security.md`
 - [x] `lessons-learned.md`
 - [x] Network topology diagram
-- [ ] Screenshots
+- [x] Screenshots
 
 ## Phase 8 — GitHub Publication
 - [x] Repository created
-- [ ] Final cleanup and full commit history
-- [ ] Tagged release (v1.0.0)
+- [x] Final cleanup and full commit history
+- [x] Tagged release (v1.0.0)
 
 ## Phase 9 — Final Engineering Review
-- [ ] Self-assessment across all technical dimensions (/10 per category)
+- [x] Self-assessment across all technical dimensions (/10 per category)

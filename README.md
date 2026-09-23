@@ -1,6 +1,6 @@
 # 🌐 Multi-Router WAN
 
-[![Status](https://img.shields.io/badge/status-in--progress-yellow?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/status-completed-brightgreen?style=for-the-badge)]()
 [![Cisco Packet Tracer](https://img.shields.io/badge/Cisco-Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)]()
 [![Routing](https://img.shields.io/badge/Routing-Static-blue?style=for-the-badge)]()
 [![Routers](https://img.shields.io/badge/Routers-4-informational?style=for-the-badge)]()

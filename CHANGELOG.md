@@ -4,16 +4,14 @@ All notable changes to this project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased] — targeting v1.0.0 (First Stable Release)
+## [1.0.0] - 2026-09-23 (First Stable Release)
 
-### Added since v0.9.0
+### Added
 - Troubleshooting Scenario 2: shut-down WAN interface on Core-R (identical symptom to Scenario 1, different root cause — also documented a Packet Tracer vs. real IOS behavioral difference in static route visibility)
 - Troubleshooting Scenario 3: wrong IP address on an end device (PC2), diagnosed via `tracert`
 - Troubleshooting Scenario 4: mismatched subnet mask on a WAN link (Branch01-R ↔ Branch02-R)
 - Troubleshooting Scenario 5: wrong next-hop on a static route — a one-way (forward path OK, return path broken) failure
-
-### Planned
-- Final engineering self-review (scored per category)
+- Final engineering self-review
 
 ## [0.9.0] - 2026-09-20 (Pre-release — one step from v1.0.0)
 
