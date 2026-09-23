@@ -111,7 +111,7 @@ Full test plan and results (local, same-site, WAN, remote LAN, end-to-end, rever
 
 ## 🩺 14. Troubleshooting
 
-One deliberate failure-injection scenario completed (missing static route) — full symptom/investigation/root-cause/fix writeup: [`documentation/troubleshooting.md`](documentation/troubleshooting.md). Additional scenarios planned.
+All 5 planned failure-injection scenarios completed (missing route, interface shutdown, wrong end-device IP, mismatched WAN subnet mask, wrong next-hop) — full symptom/investigation/root-cause/fix writeups: [`documentation/troubleshooting.md`](documentation/troubleshooting.md)
 
 ## 🔒 15. Security Baseline
 

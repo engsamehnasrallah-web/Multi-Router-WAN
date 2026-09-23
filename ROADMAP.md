@@ -29,10 +29,10 @@
 
 ## Phase 6 — Troubleshooting Lab
 - [x] Scenario 1: missing static route
-- [ ] Scenario 2: interface shutdown
-- [ ] Scenario 3: wrong IP address
-- [ ] Scenario 4: wrong subnet mask
-- [ ] Scenario 5: wrong next-hop / broken WAN link
+- [x] Scenario 2: interface shutdown
+- [x] Scenario 3: wrong IP address
+- [x] Scenario 4: mismatched subnet mask
+- [x] Scenario 5: wrong next-hop
 
 ## Phase 7 — Documentation
 - [x] `README.md`
@@ -42,7 +42,7 @@
 - [x] `wan-design.md`
 - [x] `routing.md`
 - [x] `testing.md`
-- [x] `troubleshooting.md` (scenario 1)
+- [x] `troubleshooting.md` (all 5 scenarios)
 - [x] `security.md`
 - [x] `lessons-learned.md`
 - [x] Network topology diagram

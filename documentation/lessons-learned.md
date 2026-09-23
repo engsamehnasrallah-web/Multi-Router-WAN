@@ -18,6 +18,12 @@ Early static-routing design included a flawed assumption that Core-R wouldn't ne
 
 Seeing a single dropped packet on the very first ping to a new destination — followed by 100% success afterward — initially looked like a connectivity problem. It's actually the expected cost of ARP resolution (learning a destination or gateway's MAC address) before the first packet can be transmitted, and it's unrelated to routing correctness. Confirming this using TTL values (which independently validated hop count) was a useful way to separate "transient Layer 2 behavior" from "a real Layer 3 problem."
 
+## Simulator Behavior Can Diverge from Real IOS
+
+Two separate instances in this project revealed that Cisco Packet Tracer doesn't always model IOS behavior with full fidelity: the DCE clock rate default (a serial link came up `up/up` before any `clock rate` command was issued) and, more subtly, static route persistence — a route depending on an unreachable next-hop (interface shut down) remained visible in `show ip route` for the full outage in Packet Tracer, where real IOS would typically drop it from the table via recursive-lookup failure. Neither of these invalidated the underlying networking concepts, but both were useful reminders to treat "it worked in the simulator" as a starting point for understanding, not a substitute for knowing what real hardware is expected to do.
+
 ## Root-Cause Reasoning Beats Symptom-Chasing
 
 When Scenario 1's ping failed with "Destination host unreachable" from a specific router's IP, the instinct might be to check the destination end of the network first. Instead, tracing the message back to *which device generated the rejection* (and reasoning about why that specific device — not any other — would be the one to reject it) pointed directly at the correct router to investigate, without needing to check every device in the topology.
+
+Scenario 2 reinforced this further: it produced an identical error message from the identical source IP as Scenario 1, but the root cause was completely different (a missing route vs. an unreachable next-hop due to a shut-down interface). Verifying the previous fix was still in place — rather than assuming the same bug had resurfaced — was the only way to correctly identify that a new, distinct problem had been introduced.
